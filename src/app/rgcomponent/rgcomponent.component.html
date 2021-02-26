@@ -1,0 +1,9 @@
+<p>rgcomponent works! and the name is {{name}}</p>
+<p>The exercises wich {{name}} does are:</p>
+<ul>
+	<li *ngFor="let e of exercises">{{e}}</li>
+</ul>
+
+<p *ngIf="exerciseDay; else msgNoExercise">No olvidar hacer ejercicio a las 13:30</p>
+
+<ng-template #msgNoExercise>Hoy no toca hacer ejercicio</ng-template>
